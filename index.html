@@ -185,6 +185,76 @@ body{font-family:'Cormorant Garamond',serif;background:#0a0008;color:var(--dark)
   color:#7effa8;font-size:1.15em;margin-top:16px;
 }
 
+/* ══════════════════ SECTION — GIFTS ══════════════════ */
+.gifts-section{
+  width:100%;
+  background:linear-gradient(180deg,#fce8ec 0%,#fdf6ee 100%);
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:70px 20px;text-align:center;
+}
+.gifts-intro{
+  max-width:620px;font-size:1.1em;line-height:1.8;
+  color:#5a3030;margin-bottom:40px;font-style:italic;
+}
+.gifts-grid{
+  display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+  gap:20px;max-width:900px;width:100%;
+}
+.gift-card{
+  background:#fff;
+  border:1px solid rgba(201,151,58,.25);
+  border-radius:20px;padding:26px 20px;
+  box-shadow:0 8px 28px rgba(176,48,37,.08);
+  transition:transform .35s,box-shadow .35s;
+  display:flex;flex-direction:column;align-items:center;gap:10px;
+}
+.gift-card:hover{
+  transform:translateY(-6px) scale(1.02);
+  box-shadow:0 18px 44px rgba(176,48,37,.18);
+}
+.gift-card-icon{font-size:2.2em;}
+.gift-card-name{
+  font-size:1.15em;font-weight:600;
+  color:var(--dark);line-height:1.3;
+}
+.gift-card-insta{
+  display:inline-flex;align-items:center;gap:6px;
+  font-size:.88em;color:#b03025;text-decoration:none;
+  letter-spacing:.5px;transition:color .25s;
+}
+.gift-card-insta:hover{color:#c9973a;}
+.gift-card-insta svg{width:15px;height:15px;fill:currentColor;flex-shrink:0;}
+.gifts-sizes{
+  margin-top:36px;
+  background:linear-gradient(135deg,#fff8f0,#fce8ec);
+  border:1px solid rgba(201,151,58,.35);
+  border-radius:18px;padding:24px 36px;
+  box-shadow:0 6px 20px rgba(176,48,37,.08);
+  text-align:center;
+}
+.gifts-sizes-title{
+  font-size:1.1em;font-weight:600;color:var(--dark);
+  margin-bottom:14px;letter-spacing:.5px;
+}
+.gifts-sizes-row{
+  display:flex;gap:24px;justify-content:center;flex-wrap:wrap;
+}
+.gift-size-item{
+  background:#fff;border:1px solid rgba(201,151,58,.3);
+  border-radius:12px;padding:12px 24px;
+  font-size:1.05em;color:#5a3030;
+}
+.gift-size-item strong{color:var(--red);margin-left:4px;}
+.gifts-local-note{
+  margin-top:24px;
+  background:linear-gradient(135deg,#fff8f0,#fff3e0);
+  border:1.5px solid rgba(201,151,58,.5);
+  border-radius:14px;padding:16px 32px;
+  font-size:1.05em;color:#5a3030;
+  font-style:italic;letter-spacing:.3px;
+  box-shadow:0 4px 14px rgba(201,151,58,.15);
+}
+
 /* ══════════════════ FOOTER ══════════════════ */
 footer{
   width:100%;background:#050002;
@@ -245,19 +315,12 @@ footer{
   <div class="story-title">A história da Helena</div>
   <div class="story-book">
     <p class="story-text">
-      Numa noite estrelada de <strong>26 de maio de 2025</strong>, quando o relógio marcava
-      exatamente <strong>22h17</strong>, o reino ganhou sua mais nova e encantadora princesa. ✨
+      Era uma vez… uma pequena princesa que está prestes a completar seu primeiro aninho.
       <br/><br/>
-      Como a própria Branca de Neve, ela chegou ao mundo com olhinhos curiosos,
-      bochechas de rosas e um sorriso capaz de derreter o coração de qualquer um.
-      🌹 <br/><br/>
-      Em um ano, ela já conquistou cada cantinho da nossa casa — e cada pedacinho
-      do nosso coração. Agora, chegou a hora de celebrar esse primeiro capítulo
-      dessa história tão linda que está apenas começando…
-      <br/><br/>
-      <strong>E você faz parte dessa história também! 🍎</strong>
+      Com muito amor, preparamos um momento especial para celebrar o primeiro capítulo
+      da história da Helena. E ficaremos muito felizes em ter você conosco nesse dia tão importante.
     </p>
-    <div class="story-emoji">🌟 🍎 👑 🌸 ✨</div>
+    <div class="story-emoji">🍎 🍎 🍎 🍎</div>
   </div>
 </section>
 
@@ -309,6 +372,95 @@ footer{
       </div>
     </div>
   </div>
+</section>
+
+<!-- ══ GIFTS ══ -->
+<section class="gifts-section">
+  <div class="section-tag">🎁 Lista de Presentes 🎁</div>
+  <div class="section-title">Sugestão de Presentes</div>
+  <p class="gifts-intro">
+    Sua presença já é o nosso maior presente! 💛<br/>
+    Mas se quiser presentear a nossa princesinha, aqui vão algumas lojinhas favoritas:
+  </p>
+  <div class="gifts-grid">
+
+    <div class="gift-card">
+      <div class="gift-card-icon">🛍️</div>
+      <div class="gift-card-name">Ploft Baby</div>
+      <a class="gift-card-insta" href="https://instagram.com/ploftbabypl" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        @ploftbabypl
+      </a>
+    </div>
+
+    <div class="gift-card">
+      <div class="gift-card-icon">👗</div>
+      <div class="gift-card-name">Loja Shena</div>
+      <a class="gift-card-insta" href="https://instagram.com/lojashena_" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        @lojashena_
+      </a>
+    </div>
+
+    <div class="gift-card">
+      <div class="gift-card-icon">🏡</div>
+      <div class="gift-card-name">Casa Alexandre</div>
+      <a class="gift-card-insta" href="https://instagram.com/casa.alexandre" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        @casa.alexandre
+      </a>
+    </div>
+
+    <div class="gift-card">
+      <div class="gift-card-icon">👶</div>
+      <div class="gift-card-name">Infant Baby e Kids</div>
+      <a class="gift-card-insta" href="https://instagram.com/infantibabykids" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        @infantibabykids
+      </a>
+    </div>
+
+    <div class="gift-card">
+      <div class="gift-card-icon">🌙</div>
+      <div class="gift-card-name">Mundo da Lua</div>
+      <a class="gift-card-insta" href="https://instagram.com/mundodaluababyteens" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        @mundodaluababyteens
+      </a>
+    </div>
+
+    <div class="gift-card">
+      <div class="gift-card-icon">⭐</div>
+      <div class="gift-card-name">Terra dos Sonhos</div>
+      <a class="gift-card-insta" href="https://instagram.com/terradossonhospl" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        @terradossonhospl
+      </a>
+    </div>
+
+    <div class="gift-card">
+      <div class="gift-card-icon">💄</div>
+      <div class="gift-card-name">Boticário</div>
+      <a class="gift-card-insta" href="https://instagram.com/oboticario" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        @oboticario
+      </a>
+    </div>
+
+  </div>
+
+  <div class="gifts-sizes">
+    <div class="gifts-sizes-title">👗 Tamanhos para presentear</div>
+    <div class="gifts-sizes-row">
+      <div class="gift-size-item">👕 Roupa <strong>Tam. 2 – 3</strong></div>
+      <div class="gift-size-item">👟 Sapato <strong>Nº 22</strong></div>
+    </div>
+  </div>
+
+  <div class="gifts-local-note">
+    🎁 A lista de presentes está disponível nas lojinhas sugeridas 🎁
+  </div>
+
 </section>
 
 <!-- ══ COUNTDOWN ══ -->
